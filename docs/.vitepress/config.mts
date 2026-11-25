@@ -55,10 +55,16 @@ export default defineConfig({
       themeConfig: {
         nav: [
           { text: '홈', link: '/ko/' },
+          { text: '입문 교재', link: '/ko/study/' },
           { text: '전체 문서', link: '/ko/skylit/' },
           { text: 'English', link: '/' }
         ],
-        sidebar: sidebar(true),
+        sidebar: {
+          '/ko/study/': [{ text: '입문 교재', items: [
+            { text: '옵션 거래 입문', link: '/ko/study/' }
+          ] }],
+          '/ko/skylit/': sidebar(true)
+        },
         outline: { label: '이 페이지에서' },
         docFooter: { prev: '이전', next: '다음' },
         lastUpdated: { text: '수정' }

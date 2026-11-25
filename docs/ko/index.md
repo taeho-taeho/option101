@@ -7,6 +7,9 @@ hero:
   tagline: Greeks, 딜러 포지셔닝, 시장 구조와 옵션 플로우를 하나의 학습 공간에서.
   actions:
     - theme: brand
+      text: 처음부터 공부하기
+      link: /ko/study/
+    - theme: alt
       text: 전체 문서 보기
       link: /ko/skylit/
     - theme: alt
